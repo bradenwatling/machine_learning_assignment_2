@@ -51,7 +51,7 @@ if __name__ == '__main__':
         error = cross_entropy(M, w, b, weight_decay, dataInput, targetInput)
         acc = accuracy(M, w, b, dataInput, targetInput)
 
-        optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(error)
+        optimizer = tf.train.AdamOptimizer(learning_rate).minimize(error)
 
         sess = tf.InteractiveSession()
         init = tf.global_variables_initializer()
