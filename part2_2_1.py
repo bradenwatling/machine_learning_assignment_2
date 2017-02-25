@@ -18,7 +18,7 @@ def hidden_layer(h, num_inputs, num_units):
 def cross_entropy(M, l, stacked_weights, prediction, target):
     # One-hot encode the target to a matrix of 10 classes x N examples
     target_one_hot = tf.transpose(tf.one_hot(tf.to_int32(target), 10, 1.0, 0.0, -1))
-    loss = tf.reduce_sum(tf.nn.softmax_cross_entropy_with_logits(prediction, target_one_hot, 0)) / M
+    loss = tf.reduce_sum(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=target_one_hot, dim=0)) / M
     # Sum up the squares of all elements in W (weight decay)
     weight_decay = 0
     for weights in stacked_weights:
@@ -73,6 +73,7 @@ if __name__ == '__main__':
         sess = tf.InteractiveSession()
         init = tf.global_variables_initializer()
         sess.run(init)
+        sess.graph.finalize()
 
         trainingLosses = []
         trainingAccuracies = []

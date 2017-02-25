@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def cross_entropy(M, w, b, l, x, y):
-    loss = tf.reduce_sum(tf.nn.sigmoid_cross_entropy_with_logits(tf.expand_dims(tf.reduce_sum(tf.reduce_sum(x * w, -1), -1), -1) + b, y), 0) / M
+    loss = tf.reduce_sum(tf.nn.sigmoid_cross_entropy_with_logits(logits=tf.expand_dims(tf.reduce_sum(tf.reduce_sum(x * w, -1), -1), -1) + b, labels=y), 0) / M
     weight_decay = l / 2 * tf.reduce_sum(tf.reduce_sum(tf.square(w), 0), 0)
 
     return loss + weight_decay
