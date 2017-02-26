@@ -54,11 +54,11 @@ if __name__ == '__main__':
         M = trainData.shape[0]
         N = trainData.shape[1]
 
-        learning_rate = 0.01
+        learning_rate = 0.001
         weight_decay = 3e-4
         batch_size = 500
 
-        hidden_units = 100
+        hidden_units = 1000
 
         z1, flattened_w1 = hidden_layer(tf.transpose(dataInput), N, hidden_units)
         z2, flattened_w2 = hidden_layer(tf.nn.relu(z1), hidden_units, 10)
@@ -81,7 +81,7 @@ if __name__ == '__main__':
         testingAccuracies = []
         validationLosses = []
         validationAccuracies = []
-        for j in range(100):
+        for j in range(200):
             print("Epoch " + str(j))
             for i in range(0, M, batch_size):
                 # Perform the update
@@ -109,7 +109,7 @@ if __name__ == '__main__':
                      })
             validationLosses.append(err)
             validationAccuracies.append(accuracy)
-        print(testAccuracies[-1])
+        print(testingAccuracies[-1])
         plt.figure(1)
         plt.plot(trainingLosses)
         plt.title('Neural Net Training Loss vs. Number of Epochs')

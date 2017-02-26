@@ -54,7 +54,7 @@ if __name__ == '__main__':
         M = trainData.shape[0]
         N = trainData.shape[1]
 
-        learning_rate = 0.01
+        learning_rate = 0.001
         weight_decay = 3e-4
         batch_size = 500
 
@@ -82,7 +82,7 @@ if __name__ == '__main__':
         testingAccuracies = []
         validationLosses = []
         validationAccuracies = []
-        for j in range(100):
+        for j in range(200):
             print("Epoch " + str(j))
             for i in range(0, M, batch_size):
                 # Perform the update
