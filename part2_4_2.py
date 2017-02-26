@@ -39,7 +39,9 @@ def visualize(w, hidden_units):
     for i in range(hidden_units):
         plot = plt.subplot(25, 40, i + 1)
         plt.axis('off')
+        # From piazza
         plt.imshow(w[i], cmap=plt.cm.gray, vmin=0.5 * w.min(), vmax=0.5 * w.max())
+    # Remove spacing between the images
     plt.subplots_adjust(wspace=0, hspace=0)
     plt.show()
 
