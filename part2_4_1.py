@@ -85,7 +85,7 @@ if __name__ == '__main__':
         validationLosses = []
         validationAccuracies = []
 
-        early_stop = 100
+        early_stop = 26
 
         for j in range(early_stop):
             print("Epoch " + str(j))
@@ -121,7 +121,7 @@ if __name__ == '__main__':
             validationAccuracies.append(accuracy)
 
             if (j + 1) % (early_stop / 4) == 0 or j == early_stop - 1:
-                saver.save(sess, 'saved_sessions/part2_4_1_2_epoch_' + str(j + 1) + '.ckpt')
+                saver.save(sess, 'saved_sessions/part2_4_1_epoch_' + str(j + 1) + '.ckpt')
         plt.figure(1)
         plt.plot(trainingLosses)
         plt.title('Neural Net Training Loss vs. Number of Epochs')
