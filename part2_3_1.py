@@ -58,7 +58,7 @@ if __name__ == '__main__':
         weight_decay = 3e-4
         batch_size = 500
 
-        hidden_units = 1000
+        hidden_units = 100
 
         z1, flattened_w1 = hidden_layer(tf.transpose(dataInput), N, hidden_units)
         z2, flattened_w2 = hidden_layer(tf.nn.relu(z1), hidden_units, 10)
@@ -109,6 +109,7 @@ if __name__ == '__main__':
                      })
             validationLosses.append(err)
             validationAccuracies.append(accuracy)
+        print(testAccuracies[-1])
         plt.figure(1)
         plt.plot(trainingLosses)
         plt.title('Neural Net Training Loss vs. Number of Epochs')

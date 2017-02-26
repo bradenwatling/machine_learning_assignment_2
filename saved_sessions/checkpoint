@@ -1,0 +1,5 @@
+model_checkpoint_path: "part2_4_1_2_epoch_100.ckpt"
+all_model_checkpoint_paths: "part2_4_1_2_epoch_25.ckpt"
+all_model_checkpoint_paths: "part2_4_1_2_epoch_50.ckpt"
+all_model_checkpoint_paths: "part2_4_1_2_epoch_75.ckpt"
+all_model_checkpoint_paths: "part2_4_1_2_epoch_100.ckpt"
