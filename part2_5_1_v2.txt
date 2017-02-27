@@ -1,0 +1,71 @@
+Numpy seed: 1488178578
+Tensorflow seed: 484221134363867600
+
+
+
+Starting model 1
+Learning rate: 0.00108364007724
+Weight decay: 0.00127963478091
+Use dropout: True
+Number of layers: 2
+Hidden units for layer 1: 130
+Hidden units for layer 2: 219
+Validation accuracy: [0.88300002]
+Testing accuracy: [0.87298089]
+Finished model 1
+
+
+
+Starting model 2
+Learning rate: 0.000958584072379
+Weight decay: 0.000666696689384
+Use dropout: True
+Number of layers: 1
+Hidden units for layer 1: 331
+Validation accuracy: [0.89600003]
+Testing accuracy: [0.88289279]
+Finished model 2
+
+
+
+Starting model 3
+Learning rate: 0.00891097844058
+Weight decay: 0.00235360106749
+Use dropout: True
+Number of layers: 3
+Hidden units for layer 1: 429
+Hidden units for layer 2: 209
+Hidden units for layer 3: 278
+Validation accuracy: [0.69400001]
+Testing accuracy: [0.70668137]
+Finished model 3
+
+
+
+Starting model 4
+Learning rate: 0.0045084023899
+Weight decay: 0.000239872091046
+Use dropout: True
+Number of layers: 4
+Hidden units for layer 1: 104
+Hidden units for layer 2: 153
+Hidden units for layer 3: 113
+Hidden units for layer 4: 263
+Validation accuracy: [0.85100001]
+Testing accuracy: [0.84948605]
+Finished model 4
+
+
+
+Starting model 5
+Learning rate: 0.00832263607854
+Weight decay: 0.00227631905676
+Use dropout: False
+Number of layers: 4
+Hidden units for layer 1: 175
+Hidden units for layer 2: 341
+Hidden units for layer 3: 131
+Hidden units for layer 4: 268
+Validation accuracy: [0.81099999]
+Testing accuracy: [0.81057268]
+Finished model 5
