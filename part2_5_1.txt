@@ -1,0 +1,60 @@
+Starting model 1
+Learning rate: 0.00965821567468
+Weight decay: 0.00215823783574
+Use dropout: False
+Number of layers: 2
+Hidden units for layer 1: 154
+Hidden units for layer 2: 342
+Validation accuracy: [0.80599999]
+Testing accuracy: [0.80653453]
+Finished model 1
+
+Starting model 2
+Learning rate: 0.00518892501072
+Weight decay: 0.00198614012802
+Use dropout: False
+Number of layers: 3
+Hidden units for layer 1: 178
+Hidden units for layer 2: 414
+Hidden units for layer 3: 468
+Validation accuracy: [0.86799997]
+Testing accuracy: [0.85499263]
+Finished model 2
+
+Starting model 3
+Learning rate: 0.00457694591852
+Weight decay: 0.00101553562783
+Use dropout: False
+Number of layers: 4
+Hidden units for layer 1: 124
+Hidden units for layer 2: 370
+Hidden units for layer 3: 222
+Hidden units for layer 4: 120
+Validation accuracy: [0.89300001]
+Testing accuracy: [0.86527169]
+Finished model 3
+
+Starting model 4
+Learning rate: 0.00208528117568
+Weight decay: 0.000842351909128
+Use dropout: True
+Number of layers: 3
+Hidden units for layer 1: 496
+Hidden units for layer 2: 355
+Hidden units for layer 3: 167
+Validation accuracy: [0.884]
+Testing accuracy: [0.87922174]
+Finished model 4
+
+Starting model 5
+Learning rate: 0.00482841524662
+Weight decay: 0.00223155719723
+Use dropout: False
+Number of layers: 4
+Hidden units for layer 1: 349
+Hidden units for layer 2: 191
+Hidden units for layer 3: 338
+Hidden units for layer 4: 169
+Validation accuracy: [0.86000001]
+Testing accuracy: [0.84471363]
+Finished model 5
